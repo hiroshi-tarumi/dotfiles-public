@@ -26,6 +26,7 @@ endif
 
 Plug 'groenewege/vim-less', { 'for': 'less' }
 Plug 'kchmck/vim-coffee-script', { 'for': 'coffee' }
+Plug 'preservim/nerdtree'
 
 call plug#end()
 
