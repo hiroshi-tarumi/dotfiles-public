@@ -14,7 +14,7 @@ function fish_prompt --description 'Write out the prompt'
 
     # Color the prompt differently when we're root
     
-    set -l suffix '❯_'
+    set -l suffix '❯_ '
     
     if functions -q fish_is_root_user; and fish_is_root_user
     
@@ -24,7 +24,7 @@ function fish_prompt --description 'Write out the prompt'
       
         end
       
-        set suffix '##'
+        set suffix '## '
 
     end
 
@@ -37,7 +37,7 @@ function fish_prompt --description 'Write out the prompt'
     
     end
 
-    echo -s (prompt_login) '$#$' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal '#$#' $prompt_status $suffix
-    echo -n -s $status_color $suffix ' <> ' $normal
+    echo -s (prompt_login) ' $#$ ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' #$# ' $prompt_status
+    echo -n -s $status_color $suffix $normal
 
 end
