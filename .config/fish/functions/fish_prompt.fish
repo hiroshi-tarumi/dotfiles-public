@@ -37,7 +37,7 @@ function fish_prompt --description 'Write out the prompt'
     
     end
 
-    echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $prompt_status
+    echo -s (prompt_login) '$#$' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal '#$#' $prompt_status $suffix
     echo -n -s $status_color $suffix ' <> ' $normal
 
 end
