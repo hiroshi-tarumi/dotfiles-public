@@ -3,11 +3,11 @@ set fish_greeting ""
 set -gx TERM xterm-256color
 
 # theme
-set -g theme_color_scheme terminal-dark
-set -g fish_prompt_pwd_dir_length 1
-set -g theme_display_user yes
-set -g theme_hide_hostname no
-set -g theme_hostname always
+#set -g theme_color_scheme terminal-dark
+#set -g fish_prompt_pwd_dir_length 1
+#set -g theme_display_user yes
+#set -g theme_hide_hostname no
+#set -g theme_hostname always
 
 # aliases
 alias ls "ls -p -G"
@@ -55,7 +55,7 @@ if test -f $LOCAL_CONFIG
 end
 
 # homebrew
-#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
 
 # >>> mamba initialize >>>
 # !! Contents within this block are managed by 'mamba init' !!
@@ -71,3 +71,6 @@ end
 #end
 # <<< conda initialize <<<
 
+# powerline-status
+set fish_function_path $fish_function_path "/home/xxx/.local/lib/python3.11/site-packages/powerline/bindings/fish/"
+powerline-setup
