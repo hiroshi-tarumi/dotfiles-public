@@ -55,4 +55,19 @@ if test -f $LOCAL_CONFIG
 end
 
 # homebrew
-eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+#eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
+
+# >>> mamba initialize >>>
+# !! Contents within this block are managed by 'mamba init' !!
+#set -gx MAMBA_EXE "/home/xxx/.micromamba/bin/micromamba"
+#set -gx MAMBA_ROOT_PREFIX "/home/xxx/micromamba"
+#$MAMBA_EXE shell hook --shell fish --prefix $MAMBA_ROOT_PREFIX | source
+# <<< mamba initialize <<<
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+#if test -f /home/xxx/micromamba/bin/conda
+#    eval /home/xxx/micromamba/bin/conda "shell.fish" "hook" $argv | source
+#end
+# <<< conda initialize <<<
+
